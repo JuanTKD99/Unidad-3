@@ -165,17 +165,17 @@ int main() {
 	char nombreBD[40];
 	int numeroBD = 0;
 
-	printf("\b***Bienvenido al sistema para bases de datos***\n");
+	printf("\b*Bienvenido al sistema para bases de datos*\n");
 	printf("\nEstos son los comandos :\n\n");
 
 	while (continuar == 0) {
-		printf("\t> mkdb nombre tamaño\n");
-		printf("\t> loaddb nombre\n");
-		printf("\t> savedb nombre\n");
+		printf("\t> mkdb  inpu: nombre tamaño\n");
+		printf("\t> loaddb input: nombre\n");
+		printf("\t> savedb input: nombre\n");
 		printf("\t> readall\n");
 		printf("\t> readsize\n");
-		printf("\t> mkreg cedula nombre semestre\n");
-		printf("\t> readreg cédula\n");
+		printf("\t> mkreg input: cedula nombre semestre\n");
+		printf("\t> readreg input:  cédula\n");
 		printf("\t> exit\n\n");
 
 		printf(">");
@@ -219,7 +219,7 @@ int main() {
 		}
 
 		else if (strcmp(comandoTok[0], "readall") == 0) {
-			printf("READALL CHECK");
+			printf("READALL CHECK ");
 			leerTodo(arregloEstudiante, numeroRegistros);
 		}
 
